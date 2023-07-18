@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+    <style>
+        h1 { /*Altera todas as tags h1*/
+            background: red; /*Altera a cor de fundo*/
+        }
+
+        .fundo-vermelho{
+            background: red; /*Altera a cor de fundo de todas as tags com o nome da classe especificada, porém o navegador da prioridade ao que estiver no id, sabendo disso vai da idéia do programador do que fazer*/ 
+        }
+
+        #segundo-identificador { /*Altera a cor da ttag com o id referente ao nome especificado após a cerquilha*/
+            background: purple;
+        }
+
+        .bold{
+            color: yellow; /*Altera a cor da fonte*/
+        }
+
+        p { /*Altera todas as tags p*/
+            background: blue; /*Altera a cor de fundo*/
+        }
+    </style><!--Tag style estiliza o HTML usado códigos CSS-->
+</head>
+<body>
+    <h1 id="primeiro-identificador" class="fundo-vermelho"> <!--o id serve para identificar tags, os ids nunca podem ter nomes iguais, já o class também é um tipo de identificador porém é aceito que seja repetido-->
+        Tudo dessa tag fica nessa tag
+    </h1>
+    <h1 id="segundo-identificador" class="='fundo-vermelho"> <!--Isso é muito importante quando usar CSS e JavaScript, pois assim identificamos eles dentro do CSS ou JavaScript e fazemos alguma alteração especifica para ele-->
+        Tudo dessa tag fica nessa tag
+    </h1>
+    <p>Aqui não é <b class="bold">afetado</b> pelo CSS</p>
+</body>
+</html>
