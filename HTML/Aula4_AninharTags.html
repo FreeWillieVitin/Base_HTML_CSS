@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Tags</title>
+    <style>
+        .img-test{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background: rgb(0, 255, 34);">Semantica</h1> <!--propriedade style aplica um codígo css diretamente na tag-->
+    <p>Lorem ipsum <del>não quero essa frase</del> <ins>quero essa</ins> <s>risca</s> <u>underscore</u>, sit amet <small>consectetur</small> 2<sup>2</sup> adipisicing elit. 
+       Neque, H<sub>2</sub>O<!--tags -> p = paragrafo, del = risca a palavra de forma semantica, ins = sublinha a linha de forma semantica, s = risca a palavra de forna não semantica, u - sublinha de forma não semantica, small = diminui a fonte de uma determinada palavra ou frase, sup = Elevar um determinado número ou letra--> 
+    <br>
+    <br>
+    <q cite="https://pt.wikipedia.org/wiki/Copa_Santa_Catarina_de_Futebol_Sub-20_de_2016"><!--A tag q é usada para criar citações curtas, ela vem acompanha da propriedade cite que é de onde a frase será citada e dentro da tag vem a citação-->
+        A Copa Santa Catarina de Futebol Sub-20 de 2016 foi a 1ª edição desta competição de futebol organizada pela Federação Catarinense de Futebol (FCF), 
+        que aconteceu entre 25 de março e 27 de junho de 2016.
+        O campeão doi o Figueirense, que venceu a Chapecoense na final.
+    </q>
+    <br>
+    <br>
+        nesciunt est cupiditate reiciendis mollitia, sint voluptatibus ex impedit eligendi dignissimos iure natus doloremque 
+        similique <em>sit</em>. <i>Reiciendis</i>, <b>accusantium!</b> <strong>Illum</strong>, nam.<!--Tags -> em = Usada para dar enfâse para uma palavra, por padrão de estilo a palavra fica em itálico mas é reconhecida por leitores de tela onde o sistema identifica e consegue alterar o tom de voz do leitor, i = usado apenas para deixar o texto em itálico, b = uníca função é deixar o texto em negrito, strong = identifica a palavra como a parte mais forte do texto, usa o negrito como padrão, usado também por leitores de texto-->
+    </p>
+
+    <hr> <!--Traça uma linha entra um bloco e outro, como se fosse uma quebra de linha-->
+
+    <blockquote cite="https://pt.wikipedia.org/wiki/Copa_Santa_Catarina_de_Futebol_Sub-20_de_2016">
+        A Copa Santa Catarina de Futebol Sub-20 de 2016 foi a 1ª edição desta competição de futebol organizada pela Federação Catarinense de Futebol (FCF), 
+        que aconteceu entre 25 de março e 27 de junho de 2016.
+        O campeão doi o Figueirense, que venceu a Chapecoense na final.
+    </blockquote><!--blockquote é um bloco de citação longo, podemos usar paragrafos dentro dessa citação longa-->
+
+    <div><!--div é um container genérico ou seja sem semantica e que não tem função , normalmente usado para agrupar elementos de estilo, deve ser utilizado somente quando não tiver outro elemente de semântica-->
+        <h2 style="background: rgb(179, 255, 0);">Link</h2> <!--propriedade style aplica um codígo css diretamente na tag-->
+        <a href="https://www.globo.com/" target="_blank"> Link em nova aba</a><br><!--é a tag ancora para usar a propriedade href, essa propriedade recebe um link podendo ser de outro site, direcionamento para outro página ou caminhos de arquivos, também recebe a propriedade target, que define como essa página será aberta, se em outra aba ou na mesma-->
+        <a href="https://www.globo.com/" target="_self"> Link na aba atual</a><br>
+        <a href="https://www.globo.com/" target="_parent"> Link na aba atual</a><br>
+        <a href="https://www.globo.com/" target="_top"> Link na aba atual</a><br>
+        <h3 style="background: rgb(179, 255, 0);">Imagem</h3> <!--propriedade style aplica um codígo css diretamente na tag-->
+        <a href="https://rafaelandrade.artstation.com/projects/qAvdb2" target="_blank">
+            <img class="img-test" src="https://cdna.artstation.com/p/assets/images/images/017/435/032/large/rafael-andrade-img-20190421-171045-348.jpg?1555980004"
+            alt="Vovó juju" width="200" height="200"> <!--Dentro da tag ancora <a>, podemos inserir imagens usando a tag img, a propriedade que recebe a imagem é a src e pode ser estilizada como no exemplo alterando sua altura com a propriedade height e o comprimento -->
+        </a>
+    </div>
+
+</body>
+</html>
