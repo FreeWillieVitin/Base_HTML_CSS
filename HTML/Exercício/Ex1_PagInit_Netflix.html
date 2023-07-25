@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #corpo-menu{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            margin: 0 auto;
+        }
+
+        body{
+            background-image: url("https://external-preview.redd.it/vZfuZx0fkiBS1W0igpEl1bSwi5o8XMC77J1iKm4W-nI.jpg?auto=webp&s=2205d5e53dfcc9e1393faea34f96b7992a7f54e1");
+            background-size: cover;
+        }
+
+        #gradiant {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+        }
+
+        .Botao1{
+            width: 80px;
+            height: 40px;
+            background: red;
+            border: 0;
+            border-radius: 10%;
+            color: white;
+        }
+
+        #mains{
+            width: 60%;
+            margin: 0 auto;
+            border: dotted white;
+        }
+
+        #mains div h1 {
+            color: white;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+
+        #mains div h2 {
+            color: white;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        #mains div p {
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        #confirmed-email {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #confirmed-email input{
+            width: 280px;
+            height: 40px;
+            border-radius: 10px; 
+            }
+
+        #confirmed-email button{
+            width: 90px;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
-    net
+    <div id="gradiant">
+        <header id="menu">
+            <div id="corpo-menu">
+                <a href="#" target="_self"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" width="160" alt="netflix logo" ></a>
+                <h2><button class="Botao1" type="button" style="font-family: sans-serif;"><b>Entrar</b></button></h2>
+            </div>
+        </header>
+        <main id="mains">
+            <div>
+                <h1>Filmes, séries e muito mais, sem limites</h1>
+                <h2>Assista onde quiser. Cancele quando quiser.</h2>
+                <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+                <div id="confirmed-email">
+                    <input type="email" name="email" placeholder="Email">
+                    <button class="Botao1">Vamos lá ></button>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
