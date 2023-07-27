@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section-one,
+        .section-two{
+            box-sizing: border-box;
+        }
+
+        .section-one{
+            width: 200px;
+            height: 50px;
+            background-color: greenyellow;
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/d7af077c-af5a-4055-8f9a-740a43588583/a7265ef3-cac9-4c22-a3e6-6c88ba72bbf5/BR-pt-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+            background-size: cover;
+            background-position: center center;
+            border: 5px solid black;
+            border-bottom-width: 10px;
+            border-left-color: blueviolet;
+            border-top-color: rgb(43, 226, 113);
+            border-right-color: rgb(105, 9, 49);
+            padding: 150px 0 0 0; 
+            color: white;
+            margin: 30px;
+        }
+        .section-two{
+            background: crimson;
+            width: 200px;
+            height: 50px;
+            border: 5px solid black;
+            padding: 15px 0;
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section-one">Lorem ipsum dolor sit amet consectetur</section>
+    <section class="section-two">2</section>
+</body>
+</html>
