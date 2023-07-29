@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantica</title>
+    <title>Semantica</title> <!--Tags semanticas, são tags que tem sua função exata de utilização, diferente de uma div que serve como um container genérico e que de certa forma não representa nada -->
 </head>
 <body>
-    <header>
+    <header><!--Um exemplo de tag semantica é a header, que é usada para criar cabeçalhos de páginas, blocos e etc, nela normalmente temos logos, menus, campos de busca, mas não é limitado apenas a isso -->
         <h1>
             <a href="#">Home</a>
         </h1>
@@ -14,10 +14,10 @@
         <div>Alinhar algo</div>
     </header>
 
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+    <aside><!--A tag aside é usada pra criar conteúdo para as laterais-->
+        <nav><!--As nav são seções para usar como barra de navegação é nela onde normalmente entra menus, listas e conteúdos de acesso para outras áreas do site-->
+            <ul><!--A ul representa uma lista não ordenada-->
+                <li><a href="#">Home</a></li><!--li são os itens da lista podendo adicionar links de acesso-->
                 <li><a href="#">Roupa Masculina</a></li>
                 <li><a href="#">Roupa Feminina</a></li>
                 <li><a href="#">Contato</a></li>
@@ -26,12 +26,12 @@
     </aside>
 
     <hr>
-    <section>
+    <section><!--Como a div section também é uma tag genérica usado quando não existir uma outra tag semantica para a ocasião, a sua diferença é que ela é usada quando o seu conteúdo tiver alguma relêvancia maior a sua aplicação, a div é mais usada para uma estilização de conteúdo e as sections devesse por padrão sempre ter um cabeçalho (h1-h6)-->
         <header>
             <h2>Roupas Femininas</h2>
         </header>
             
-        <article>
+        <article><!--Article normalmente é usando para mostrar o conteúdos que se considera principal da aplicação, por exemplo um site de venda de cursos, a seção que indica os cursos que estão a venda por semantica seria aconselhável que usasse um article-->
             <h3>cabeçalhos do article</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                Eum incidunt accusantium omnis repellendus ullam itaque fugiat inventore sunt. 
@@ -78,7 +78,7 @@
         </article>
     </div>
 
-    <footer>
+    <footer><!--Footer seria o rodapé da página, é indicado incluir no rodapé tudo o que for se repetir em sua aplicação e que faça sentido ficar no rodapé-->
         Endereço da página
     </footer>
 

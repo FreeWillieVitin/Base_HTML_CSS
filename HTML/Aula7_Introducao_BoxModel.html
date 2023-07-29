@@ -6,10 +6,10 @@
     <title>Box Model</title>
 
     <style>
-        * {
+        * { /* O element * é o seletor universal e mudar suas propriedades significa que todos os elementos terão suas propriedades alteradas, podemos usar tambem como um pai para outro elemento e dessa forma ira afetar todos os elementos do mesmo tipo por exemplo h1*{}, dessa forma todos os h1 serão afetados*/
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; /* A propriedade border-box significa que bordas ou padding não somaram ao tamanho do que ele estiver implementando por exemplo, uma div como width 200px e uma height 200px, se inserirmos uma border de 20px sem a propriedade border-box, esses 20px da borda será somado em cada lado da div totalizando 240w e 240h, se usarmos essa propriedade, o valor da borda será incorporado a div não alterando o seu tamanho.*/
         }
 
         .section-one,
