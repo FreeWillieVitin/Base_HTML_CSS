@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário e input</title>
 </head>
+<style>
+    label{
+       cursor: pointer; 
+       display: block;
+    }
+
+    #check label{
+        display: inline;
+    }
+</style>
+
 <body>
     <form action="#" method="get" target="_blank" autocomplete="off"> 
         <section>
@@ -14,15 +25,135 @@
             <fieldset>
                 <legend>Descrição</legend>
                 <p>
-                    <input type="text" id="nome" name="nomes"
-                    placeholder="Seu nome">
+                    <label>
+                        Nome:
+                        <input type="text" id="nome" name="nomes"
+                        placeholder="Seu nome">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="Sobrenome">Sobrenome:</label>
+                    <input type="text" id="Sobrenome" name="Sobrenomes"
+                    placeholder="Seu Sobrenome" required>
+                </p>
+
+                <p>
+                    <label for="email">Seu e-mail:</label>
+                    <input type="email" id="email" name="emails" placeholder="ex.: email@email.com">
+                </p>
+
+                <p>
+                    <label for="Senha">Sua senha:</label>
+                    <input type="password" id="Senha" name="senhas" placeholder="Digite uma senha">
+                </p>
+
+                <p>
+                    <label for="numero">Digite um número:</label>
+                    <input type="number" id="numero" name="numeros" placeholder="1-10" min="1" max="10" step="2">
+                </p>
+
+                <p>
+                    <label for="arquivo">Sua Foto:</label>
+                    <input type="file" id="arquivo" name="arquivos" accept=".png, .jpg" multiple>
+                </p>
+
+                <p id="check">
+                    <label for="dev">Sou um dev</label>
+                    <input type="checkbox" id="dev" value="sim" checked>
+                    <label for="dev2">Sou um dev2</label>
+                    <input type="checkbox" id="dev2" value="sim" checked>
+                </p>
+
+                <p id="check">
+                    Gênero:<br>
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" id="Masculino" name="genero" value="M" checked>
+                    <label for="Feminino">Feminino</label>
+                    <input type="radio" id="Feminino" name="genero" value="F">
+                    <label for="Outros">Outros</label>
+                    <input type="radio" id="Outros" name="genero" value="O">
+                </p>
+
+                <p>
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="datas" value="1900-01-01">
+                </p>
+
+                <p>
+                    <label for="datatime">Data e Hora:</label>
+                    <input type="datetime-local" id="datatime" name="datahora" value="1900-01-01T00:00">
+                </p>
+
+                <p>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="horas" value="00:00:00">
+                </p>
+
+                <p>
+                    <label for="url">Sua URL:</label>
+                    <input type="url" id="url" name="urls" placeholder="URL">
+                </p>
+
+                <p>
+                    <label for="Busca">Pesquisar:</label>
+                    <input type="search" id="Busca" name="Buscas" placeholder="Pesquisar">
+                </p>
+
+                <p>
+                    <label for="cor">Cor favorita:</label>
+                    <input type="color" id="cor" name="cores" value="#ff0000">
+                </p>
+
+                <p>
+                    <label for="Selecionar">Selecione alguma coisa:</label>
+                    <select id="Selecionar" name="selecionados">
+                        <optgroup label="Teste 1">
+                            <option value="qualquer" label="valor1">
+                            <option value="qualquer2" label="valor2">
+                            <option value="qualquer3" label="valor3" disabled>
+                            <option value="qualquer4" label="valor4" selected>
+                        </optgroup>
+                        <optgroup label="Teste 2">
+                            <option value="qualquer" label="valor1">
+                            <option value="qualquer2" label="valor2">
+                            <option value="qualquer3" label="valor3" disabled>
+                            <option value="qualquer4" label="valor4" selected>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="textarea">TextArea:</label>
+                    <textarea name="textarea" id="textarea" rows="8" cols="10">
+                        Teste testando 1234
+                    </textarea>
+                </p>
+
+                <p>
+                    <label for="Range">Range:</label>
+                    <input type="range" id="Range" name="ranges" min="0" max="100" step="2" list="tickmarks">
+
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50" label="50%">
+                        <option value="60" >
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100"label="100%">
+                    </datalist>
                 </p>
 
                 <p>
                     <button type="submit">Enviar</button>
                     <button type="reset">Resetar</button>
                     <button type="menu">Menu</button>
-                    <button type="button">Enviar</button>
+                    <button type="button">Botão</button>
                 </p>
             </fieldset>
         </section>
