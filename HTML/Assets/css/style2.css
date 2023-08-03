@@ -56,3 +56,52 @@ div{
     color: initial;
     margin-left: 20px;
 }
+
+.irmaos h1+p{
+    color: chartreuse;
+}
+
+.irmaos p+h1{
+    color: chartreuse;
+}
+
+/* .irmaos h1~p{
+    color: darkgoldenrod;
+} */
+
+.irmaos .um~.dois{
+    color: blueviolet;
+}
+
+/* .irmaos .um + .dois{
+    color: blueviolet;
+} */
+
+[meu-atributo="valor"]{
+    color: steelblue;
+}
+
+[checked]{
+   width: 50px;
+   height: 50px; 
+}
+
+[meu-atributo~="valor1"]{ /*Se existir*/
+    color: steelblue;
+}
+
+[meu-atributo^="v"]{ /*Começa com*/
+    color: steelblue;
+}
+
+[meu-atributo$="1"]{ /*Termina com*/
+    color: steelblue;
+}
+
+[meu-atributo*="v"]{ /*Contém com*/
+    color: steelblue;
+}
+
+section{
+    margin-top: 40px;
+}
