@@ -1,0 +1,133 @@
+.pseudo{
+    transition: all 600ms ease-in-out;
+}
+
+.pseudo:hover{
+    background-color: aquamarine;
+}
+
+a {
+    color: darkgoldenrod;
+}
+
+a:link {
+    color: darksalmon;
+}
+
+a:visited {
+    color: teal;
+}
+
+a:hover{
+    background-color: darkslateblue;
+    color: wheat;
+    text-decoration: none;
+}
+
+a:active{
+    background-color: darkolivegreen;
+    color: wheat;
+    text-decoration: none;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled{
+    background-color: aqua;
+    cursor: not-allowed;
+}
+
+input:enabled{
+    background-color: palevioletred;
+    cursor: crosshair;
+}
+
+input:checked{
+    width: 25px;
+    height: 25px;
+}
+
+input:checked~p{
+    background-color: darkmagenta;
+}
+
+.pai .lista li:first-child {
+    background-color: antiquewhite;
+}
+
+.pai .lista li:last-child {
+    background-color: fuchsia;
+}
+
+input:required{
+    background-color: rgb(216, 121, 121);
+}
+
+p{
+    color: blue;
+}
+
+p:not(.meio){
+    color: black;
+}
+
+input:not(:checked) + p {
+    background-color: yellow;
+}
+
+ul li:nth-child(2) {
+    background-color: darkkhaki;
+}
+
+ul li:nth-child(odd) {
+    background-color: blue;
+}
+
+ul li:nth-child(even) {
+    background-color: green;
+}
+
+ul li:nth-child(3n) {
+    background-color: yellow;
+}
+
+ul li:nth-child(2n + 5) {
+    background-color: paleturquoise;
+}
+
+ul li::after{
+    content: ' - ';
+    background-color: black;
+    color: white;
+    /*display: block;*/
+}
+
+ul li::before{
+    content: ' - ';
+    background-color: black;
+    color: white;
+    /*display: block;*/
+}
+
+p::first-letter {
+    font-size: 25px;
+    float: left;
+    /* margin: 0 10px 10px 0; */
+}
+
+p::first-line{
+    background-color: pink;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+::placeholder{
+    color: chartreuse;
+}
