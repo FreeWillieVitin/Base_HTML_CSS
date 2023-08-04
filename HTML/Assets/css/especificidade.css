@@ -1,0 +1,29 @@
+/* ordem de especificidade                         (ID             classes, atributos, pseudo-classes          elementos e pseudo-elementos)
+valor seletor de especificidade   ID =               1             0                                           0
+valor seletor de especificidade   Classe =           0             1                                           0
+valor seletor de especificidade   ID>Classe =        1             1                                           0
+seletor de especificidade  Elemento>ID>Classe =      1             1                                           1
+valor seletor de especificidade   5xElementos =      0             0                                           5
+
+A tag style no html tem especificidade maior que qualquer outra, ou seja se for usado algum estilo dentro da tag ele terá prioridade
+*/
+#p {
+    background-color: black;
+    color: aliceblue !important;
+}
+
+.p {
+    background-color: yellowgreen;
+}
+
+#p.p {
+    background-color: yellowgreen;
+}
+
+p#p.p {
+    background-color: yellowgreen;
+}
+
+#b p#p.p {
+    background-color: yellowgreen;
+}
