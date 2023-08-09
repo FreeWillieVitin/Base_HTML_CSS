@@ -1,0 +1,41 @@
+html {
+    /*font-size: 100%; 100% para o navegador tem o valor de 16px como padrão*/
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pai {
+    width: 50rem;
+    /* font-size: 50px; */
+    /* width: 100vw; vw é a porcetagem da largura do viewport */
+    height: 100vh; /*vh é a porcetagem de altura do viewport*/
+    /* height: 30rem; */
+    background-color: yellow;
+}
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background-color: black;
+}
+
+.color1 {
+    background-color: aquamarine;
+}
+
+.color2 {
+    background-color: darkkhaki;
+}
+
+/* #em{
+    font-size: 1em; em é o valor relativo ao tamanho definido no elemento pai mais proximo
+} */
+
+#rem{
+    font-size: 1.6rem; /*rem é o valor relativo ao tamanho definido no elemento raiz*/
+}
