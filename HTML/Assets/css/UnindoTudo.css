@@ -1,0 +1,172 @@
+/* Breakpoints é basicamente o tamanho da tela dos dispositivos atuais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.texto {
+    display: block;
+    width: 900px;
+    height: 100%;
+    padding: 10px 5px 15px 1px; /* (top right bottom left) se for só duas propriedades (eixo x(cima e embaixo) eixo y(laterais))*/
+    border: 5px solid black;
+    border-width: 5px;
+    border-style: solid;
+    margin: 0 auto;
+}
+
+
+.grid {
+    box-sizing: border-box;
+    padding: 45px;
+    margin: 0 auto;
+    padding-top: 46px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+div {
+    display: block;
+}
+
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    font-size: 14px;
+    background-color: bisque;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    border-right: 1px solid;
+    height: 46px;
+    line-height: 46px;
+    color: black;
+    text-align: center;
+    padding: 0 25px;
+    display: block;
+    max-width: 1200px;
+}
+
+.nav-bar a:hover{
+    background-color: fuchsia;
+}
+
+.nav-fixed .nav-bar {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.text-explication{
+    max-width: 100%;
+    background-color: rgb(226, 181, 127);
+    padding-top: 46px;
+    height: 100vh;
+}
+
+.full-page-content{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.full-page-content h1{
+    margin-bottom: 10px;
+}
+
+.mais-coisas{
+    max-width: 1200px;
+    padding-top: 20px;
+}
+
+.img-test{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.footer{
+    position: static;
+    display: block;
+    background-color: bisque;
+    font-size: 12px;
+    border-top: 1px solid rgb(71, 47, 17);
+    max-width: 100%;
+}
+
+.footer-bar .img-fot{
+    width: 100px;
+    height: 100px;
+}
+
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 181, 127);
+}
+
+@media (max-width: 320px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+    .grid .col {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 2400px){
+    .grid .col {
+        width: 25%;
+    }
+}
+
+@media (max-width: 320px) {
+    .texto {
+        width: 300px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+    .texto {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2400px){
+    .texto {
+        width: 800px;
+        font-size: 40px;
+    }
+}

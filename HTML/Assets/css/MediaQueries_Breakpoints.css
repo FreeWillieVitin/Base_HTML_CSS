@@ -1,0 +1,79 @@
+/* Breakpoints é basicamente o tamanho da tela dos dispositivos atuais*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.texto {
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 0;
+    min-height: 100px;
+    margin: 0 auto 50px auto;
+    padding: 10px 5px 15px 1px; /* (top right bottom left) se for só duas propriedades (eixo x(cima e embaixo) eixo y(laterais))*/
+    border: 5px solid black;
+    border-width: 5px;
+    border-style: double;
+    border-color: cornflowerblue;
+}
+
+.texto1 { /*com o display inline nenhuma propriedade de altura ou largura afeta*/
+    display: inline;
+    background-color: red;
+    width: 50%;
+}
+
+.grid {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+@media (max-width: 320px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+    .grid .col {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 2400px){
+    .grid .col {
+        width: 25%;
+    }
+}
