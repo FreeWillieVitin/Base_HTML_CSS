@@ -10,6 +10,10 @@ body{
     font-family: sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .texto {
     display: block;
     width: 900px;
@@ -82,7 +86,7 @@ div {
     max-width: 100%;
     background-color: rgb(226, 181, 127);
     padding-top: 46px;
-    height: 100vh;
+    height: 100%;
 }
 
 .full-page-content{
@@ -126,6 +130,10 @@ div {
     width: 100%;
     height: 100%;
     background-color: rgb(226, 181, 127);
+   /* border-top-left-radius: 100px;*/
+   /* border-bottom-right-radius: 100px;*/
+   border-radius: 50% 50% 50% 50%;
+   box-shadow: inset 10px 10px 15px 5px green, 5px 5px 5px 5px rgba(0, 0, 0, 0.5); /* Direira, Esquerda, Blurr, Espalhamento e cor*/
 }
 
 @media (max-width: 320px) {

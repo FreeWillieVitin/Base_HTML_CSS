@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    background: yellow;
+    height: 500px;
+    gap: 30px;
+}
+
+.flex-item{
+    background-color: red;
+    width: 100%;
+    margin: 10px;
+}
+
+.flex-container2{
+    display: flex;
+    align-items: center;
+    background: green;
+    height: 500px;
+    gap: 30px;
+}
